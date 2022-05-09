@@ -1,4 +1,6 @@
+const { fstat } = require('fs');
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 inquirer.prompt([
     {
@@ -110,14 +112,14 @@ ${response.tests}
     
 `
     console.log(theReadMeText);
+
+    fs.writeFile('README.md', theReadMeText, function (err) {
+        console.log(err);
+    })
+
+
+
 })
 
 
-
-//Generate the README.md markup
-
-
-
-
-//Write the file to disk
 
