@@ -1,6 +1,7 @@
 const { fstat } = require('fs');
 const inquirer = require('inquirer');
 const fs = require('fs');
+let gitHub="";
 
 inquirer.prompt([
     {
@@ -70,14 +71,23 @@ inquirer.prompt([
 
     if (response.screenshot !== 'assets/images/') {
         screenshot =
-`###Screenshot
+            `###Screenshot
         
 ![alt ${response.screenshot}](assets/images/${response.screenshot})`
     }
+if(response.gitHub!==''){
+    
+    gitHub = `[${response.github}]Find more projects of mine here: https://github.com/${response.github}`;
+}
+    const badgeBaseUrl = encodeURI('https://img.shields.io/badge/license-' + response.licence + '-blue.svg');
+    const licenceBadge = `!${response.description}(${badgeBaseUrl})`;
+    //![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
     const theReadMeText = `
     
 # ${response.title}
+
+${licenceBadge}
     
 ## Description
     
@@ -99,22 +109,26 @@ ${response.credits}
     
 ## License
     
-${response.licence}
+This project is licenced under ${response.licence}
     
     
-## How to Contribute
+## Contributing
     
 ${response.contributing}
 
 ## Tests
     
 ${response.tests}
+
+## Questions
+
+${gitHub}
     
 `
     console.log(theReadMeText);
 
     fs.writeFile('README.md', theReadMeText, function (err) {
-        console.log(err);
+    console.log(err);
     })
 
 

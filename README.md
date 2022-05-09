@@ -1,18 +1,20 @@
 
     
-# ReadMeGenerator
+# ReadMe Generator
+
+!This console app helps the user generate a readme file(https://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description
     
-This is a console applicaiton that creates a readme file based on user input.
+This console app helps the user generate a readme file
 
 ## Installation
     
-'npm -i' to install the node packages then'node index.js' to run. 
+npm-i
     
 ## Usage
     
-Enter the necessary information at the prompts.  This will create a readme file in the same location as the node.js file
+run 'node index.js' and follow the prompts.
     
 ###Screenshot
         
@@ -24,14 +26,18 @@ Enter the necessary information at the prompts.  This will create a readme file 
     
 ## License
     
-MIT
+This project is licenced under MIT
     
     
-## How to Contribute
+## Contributing
     
 
 
 ## Tests
     
 
+
+## Questions
+
+[ChrisAylen]Find more projects of mine here: https://github.com/ChrisAylen
     
