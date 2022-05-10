@@ -1,12 +1,12 @@
-
+cls
     
-# Readme Generator
+# ReadmeCreator
 
-![This console app helps the user generate a readme file.](https://img.shields.io/badge/license-MIT-blue.svg)
+![A program the helps create professional Readme files.](https://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description
     
-This console app helps the user generate a readme file.
+A program the helps create professional Readme files.
 
 ## Table of Contents 
 
@@ -22,11 +22,11 @@ This console app helps the user generate a readme file.
 
 ## Installation
     
-'npm -i' or'npm i'
+npm -i
     
 ## Usage
     
-Run 'node index.js' and follow the prompts.
+node index.js
     
 ### Screenshot
         
