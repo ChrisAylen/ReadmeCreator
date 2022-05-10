@@ -1,6 +1,6 @@
 
     
-# ReadMe Generator
+# Readme Generator
 
 ![This console app helps the user generate a readme file.](https://img.shields.io/badge/license-MIT-blue.svg)
     
@@ -8,13 +8,25 @@
     
 This console app helps the user generate a readme file.
 
+## Table of Contents 
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
 ## Installation
     
-npm -i
+'npm -i' or'npm i'
     
 ## Usage
     
-run 'node index.js' and follow the prompts.
+Run 'node index.js' and follow the prompts.
     
 ### Screenshot
         
