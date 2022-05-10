@@ -1,12 +1,12 @@
-cls
-    
-# ReadmeCreator
 
-![A program the helps create professional Readme files.](https://img.shields.io/badge/license-MIT-blue.svg)
+    
+# ReadMe Generator
+
+![A command line application that will build a standardised readme.md file in you project.](https://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description
     
-A program the helps create professional Readme files.
+A command line application that will build a standardised readme.md file in you project.
 
 ## Table of Contents 
 
@@ -22,11 +22,11 @@ A program the helps create professional Readme files.
 
 ## Installation
     
-npm -i
+Create and new application folder and run npm -i.
     
 ## Usage
     
-node index.js
+Running 'node index.js' will launch the application.
     
 ### Screenshot
         
