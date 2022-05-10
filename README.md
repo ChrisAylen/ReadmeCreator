@@ -10,7 +10,7 @@ This console app helps the user generate a readme file.
 
 ## Installation
     
-npm i
+npm -i
     
 ## Usage
     
@@ -39,5 +39,5 @@ This project is licenced under MIT
 
 ## Questions
 
-[ChrisAylen](https://github.com/ChrisAylen)
+[More of my work can be found here](https://github.com/ChrisAylen)
     

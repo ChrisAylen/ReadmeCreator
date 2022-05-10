@@ -79,7 +79,7 @@ inquirer.prompt([
 if(response.gitHub!==''){
 
     const gitHubUrl=encodeURI(`https://github.com/`);
-    gitHub = `[${response.github}](${gitHubUrl}${response.github})`
+    gitHub = `[More of my work can be found here](${gitHubUrl}${response.github})`
     
     //`[${response.github}](https://github.com/${response.github})`
 
