@@ -62,7 +62,8 @@ inquirer.prompt([
     {
         type: 'list',
         name: 'licence',
-        message: 'What licence do you want to use?',
+        message: 'What licence do you want to use (default is THE UNLICENCE)?',
+        default: 'THE UNLICNECE',
         choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'MPL', 'APACHE', 'THE UNLICNECE', 'BSL', 'BSD']
     }
 ]).then(function (response) {
@@ -76,8 +77,17 @@ inquirer.prompt([
 ![alt ${response.screenshot}](assets/images/${response.screenshot})`
     }
 if(response.gitHub!==''){
+
+    const gitHubUrl=encodeURI(`https://github.com/`);
+    gitHub = `[${response.github}](${gitHubUrl}${response.github})`
     
-    gitHub = `![Find more projects of mine here:](https://github.com/${response.github})`;
+    //`[${response.github}](https://github.com/${response.github})`
+
+    // If you have any questions about the repo, open an issue or contact me directly at ${
+    //     data.email
+    //   }. You can find more of my work at [${data.github}](https://github.com/${
+    //     data.github
+    //   }/).
 }
     const badgeBaseUrl = encodeURI('https://img.shields.io/badge/license-' + response.licence + '-blue.svg');
     const licenceBadge = `![${response.description}](${badgeBaseUrl})`;
