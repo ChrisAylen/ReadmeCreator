@@ -77,10 +77,10 @@ inquirer.prompt([
     }
 if(response.gitHub!==''){
     
-    gitHub = `[${response.github}]Find more projects of mine here: https://github.com/${response.github}`;
+    gitHub = `![Find more projects of mine here:](https://github.com/${response.github})`;
 }
     const badgeBaseUrl = encodeURI('https://img.shields.io/badge/license-' + response.licence + '-blue.svg');
-    const licenceBadge = `!${response.description}(${badgeBaseUrl})`;
+    const licenceBadge = `![${response.description}](${badgeBaseUrl})`;
     //![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
     const theReadMeText = `

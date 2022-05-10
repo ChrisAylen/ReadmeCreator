@@ -1,12 +1,12 @@
 
     
-# ReadMe Generator
+# Readme Generator
 
-!This console app helps the user generate a readme file(https://img.shields.io/badge/license-MIT-blue.svg)
+![This console app helps the user generate a readme file.](https://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description
     
-This console app helps the user generate a readme file
+This console app helps the user generate a readme file.
 
 ## Installation
     
@@ -39,5 +39,5 @@ This project is licenced under MIT
 
 ## Questions
 
-[ChrisAylen]Find more projects of mine here: https://github.com/ChrisAylen
+![Find more projects of mine here:](https://github.com/ChrisAylen)
     
