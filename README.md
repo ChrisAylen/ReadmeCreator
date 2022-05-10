@@ -16,7 +16,7 @@ npm -i
     
 run 'node index.js' and follow the prompts.
     
-###Screenshot
+### Screenshot
         
 ![alt screen.png](assets/images/screen.png)
     

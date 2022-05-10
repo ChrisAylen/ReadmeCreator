@@ -67,12 +67,12 @@ inquirer.prompt([
         choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'MPL', 'APACHE', 'THE UNLICNECE', 'BSL', 'BSD']
     }
 ]).then(function (response) {
-    //console.log(response);
+  
     let screenshot = ''
 
     if (response.screenshot !== 'assets/images/') {
         screenshot =
-            `###Screenshot
+            `### Screenshot
         
 ![alt ${response.screenshot}](assets/images/${response.screenshot})`
     }
@@ -80,18 +80,11 @@ if(response.gitHub!==''){
 
     const gitHubUrl=encodeURI(`https://github.com/`);
     gitHub = `[More of my work can be found here](${gitHubUrl}${response.github})`
-    
-    //`[${response.github}](https://github.com/${response.github})`
 
-    // If you have any questions about the repo, open an issue or contact me directly at ${
-    //     data.email
-    //   }. You can find more of my work at [${data.github}](https://github.com/${
-    //     data.github
-    //   }/).
 }
     const badgeBaseUrl = encodeURI('https://img.shields.io/badge/license-' + response.licence + '-blue.svg');
     const licenceBadge = `![${response.description}](${badgeBaseUrl})`;
-    //![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+    
 
     const theReadMeText = `
     
